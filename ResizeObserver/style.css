@@ -3,19 +3,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300px;
+    height: 100vh; /* Use viewport height for full height */
     background-color: #f0f0f0;
 }
 
 /* Style the box div */
 .box {
-    padding-left: 100px;
     width: 600px;
     height: 200px;
     background-color: #3498db;
     border-radius: 10px;
-    margin-right: 20px;
-    margin-left: 400px;
+    margin: 20px; /* Adjust margin for spacing */
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 

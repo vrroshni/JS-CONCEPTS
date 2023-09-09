@@ -5,7 +5,7 @@ const randomcolor = () => {
 }
 const observer = new ResizeObserver(entries => {
     const target = entries[0]
-    const isSmall = target.contentRect.width < 450
+    const isSmall = target.contentRect.width < 700
     target.target.style.backgroundColor = isSmall ? randomcolor() : "red"
 })
 

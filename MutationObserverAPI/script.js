@@ -14,10 +14,12 @@ const observer = new MutationObserver((entries) => {
 
 
 observer.observe(parent, {
-    subtree: true,
-    childList: true
+    childList: true,
+    subtree:true
+
 })
 
 document.querySelector('.btn').addEventListener("click",() => {
+    console.log(parent.childNodes)
     parent.childNodes[0].remove()
 })

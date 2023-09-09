@@ -1,18 +1,57 @@
-.parent {
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center;
-    border: 1px solid #ccc; 
-    padding: 10px; 
+/* Style the body with a background color */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
+/* Style the parent div */
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+}
+
+/* Style the child divs */
 .child {
-    flex: 1; 
-    border: 1px solid #000; 
-    padding: 10px; 
-    margin: 5px; 
-    background-color: #3498db; 
-    color: #fff; 
-    height: 100px; 
-    width: 100px;
+    padding: 20px;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+/* Style the button container */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Style the button */
+.btn {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover effect for the button */
+.btn:hover {
+    background-color: #45a049;
 }

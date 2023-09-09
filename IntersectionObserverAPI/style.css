@@ -1,23 +1,40 @@
-.card-container{
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.card-container {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    align-items: flex-start;
+    align-items: center; /* Center horizontally within the container */
+    justify-content: center; /* Center vertically within the container */
+    margin: 2rem;
 }
 
-.card{
-    background: white;
-    border-radius: .25em;
-    border: 1px solid black;
-    padding: .5rem;
-    transform: translateX(100px);
+.card {
+    background: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    width: 300px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transform: translateX(-100%);
     opacity: 0;
-    transition: 150ms;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
-.show{
+.card:nth-child(odd) {
+    background: #f5f5f5; /* Light gray background for odd-numbered cards */
+}
+
+.card:hover {
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card.show {
     transform: translateX(0);
     opacity: 1;
 }
-
-
